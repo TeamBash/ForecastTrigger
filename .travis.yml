@@ -93,8 +93,8 @@ deploy:
     bucket: sga-teambash-test2
     key: ForecastTrigger_test.zip
     bundle_type: zip
-    application: TeamBash-Test4
-    deployment_group: TeamBash-Test2
+    application: TeamBash-Test2
+    deployment_group: TeamBash-Test4
     region: us-east-2
     on:
       branch: develop
