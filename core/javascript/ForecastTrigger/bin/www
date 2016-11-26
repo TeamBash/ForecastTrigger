@@ -111,7 +111,7 @@ function onListening() {
 
     console.log("Client Created");
 
-    var path = 'http://'+ip+":8100/forecastTrigger";
+    var path = 'http://'+ip+":8100/api/forecastTrigger";
     var sID = UUID.v4();
     var data = {"name": "forecastTrigger",
       "id": sID,
