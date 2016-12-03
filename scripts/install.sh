@@ -9,3 +9,11 @@ echo '===============Building docker===============' >> /var/log/sga-docker.log 
 docker build -t teambash/forecast-trigger-service:v1 . >> /var/log/sga-docker.log 2>&1
 echo '===============Running docker===============' >> /var/log/sga-docker.log 2>&1
 docker run -it --name forecast-trigger-service -p 8100:8100 -d teambash/forecast-trigger-service:v1
+
+dangling_images="$(sudo docker images -f "dangling=true" -q)"
+if [ "$dangling_images" == "" ] ; then
+        echo "no images"
+else
+		sudo docker rmi -f $(sudo docker images -f "dangling=true" -q)
+    	echo "images present"
+fi
