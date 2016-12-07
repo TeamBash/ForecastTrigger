@@ -9,3 +9,5 @@ Weather Predictor - Milestone -1
 ==============================
 
 Build Status - Forecast Trigger MicroService  : [![Build Status](https://travis-ci.org/airavata-courses/TeamBash.svg?branch=feature%2Ffeature-13-forecast-trigger)](https://travis-ci.org/airavata-courses/TeamBash)
+
+Please refer [here](https://github.com/TeamBash/UI/wiki) for the wiki of the Application 
